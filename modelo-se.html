@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade idade</title>
+</head>
+<body>
+<h1>Descubra se você pode votar</h1>
+    <div id="voto"></div>
+<script>
+let idade = prompt("Qual é sua idade?")
+let retorno ="";
+
+    if (idade < 16) {
+        retorno = "Você não pode";
+    }else if (idade <18 ){
+        retorno = "É opicional você";
+    }
+    else if(idade <= 65){
+   retorno = "Você é obrigado a";
+}
+    document.getElementById("voto").innerHTML = "sua idade é"+ " " + idade +","+ retorno  + " " + "votar";
+    
+</script>
+ 
+
+</body>
+</html>
